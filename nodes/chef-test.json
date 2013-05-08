@@ -1,0 +1,7 @@
+{
+	"run_list": [
+		"role[basic]",
+		"role[simple_secure]",
+		"role[develop]"
+	]
+}
