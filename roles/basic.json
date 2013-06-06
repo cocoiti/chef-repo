@@ -1,26 +1,26 @@
 {
-	"name": "basic",
-	"override_attributes": {
+  "name": "basic",
+  "override_attributes": {
     "ntp": {
       "servers": ["ntp.nict.jp", "ntp1.jst.mfeed.ad.jp"]
     }
   },
-	"default_attributes": {
-		"authorization": {
-			"sudo": {
-				"groups": [
-					"admin"
-				],
-				"passwordless": "true"
-			}
-		}	
-	},
+  "default_attributes": {
+    "authorization": {
+      "sudo": {
+        "groups": [
+          "admin"
+        ],
+        "passwordless": "true"
+      }
+    } 
+  },
   "json_class": "Chef::Role",
   "description": "basic setting",
   "chef_type": "role",
   "run_list": [
     "recipe[chef-solo-search]",
-		"recipe[ntp]",
+    "recipe[ntp]",
     "recipe[sudo]",
     "recipe[zsh]"
   ]

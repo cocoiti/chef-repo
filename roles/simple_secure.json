@@ -24,7 +24,7 @@
         "permit_empty_passwords":  "no",
         "password_authentication": "no",
         "pubkey_authentication":   "yes"
-      }	
+      }
     }
   },
 
